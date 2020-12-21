@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="../../output.css" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <a
+      class="top-4 left-4 w-20 h-20 rounded-full bg-red-500 flex items-center justify-center absolute"
+      href="../../index.html"
+      >ACCUEIL</a
+    >
+
+    <h1 class="font-medium text-8xl text-white text-center pt-20 pb-20">
+      Flexbox
+    </h1>
+
+
+    <hr />
+    <!-- Contenu de la leçon -->
+
+    <div class="container mx-auto pb-60">
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Propriétés Container</h2>
+      <!-- Initialisation : flex / inline-flex -->
+      <!-- Justify Content : justify-start / end / center / between / around / evenly -->
+      <!-- Align Items : items-start / end / center / baseline / stretch -->
+      <!-- Flex Direction : flex-row / row-reverse / col / col-reverse -->
+      <!-- Flex Wrap : flex-wrap / wrap-reverse /  nowrap -->
+      <!-- Align Content : content-start / end / center / between / around / evenly -->
+
+      <div class="flex  bg-gray-200">
+        <div class="w-20 h-20 bg-green-400 m-4"></div>
+        <div class="w-20 h-20 bg-green-400 m-4"></div>
+        <div class="w-20 h-20 bg-green-400 m-4"></div>
+      </div>
+
+
+        <h2 class="text-4xl text-gray-50 pt-10 pb-5">Propriétés pour les enfants</h2>
+        <!-- Flex Grow : flex-grow-0 / flex-grow -->
+        <!-- Flex Shrink : flex-shrink-0 / flex-shrink	 -->
+        <!-- Flex : flex-1 / auto / initial / none -->
+        <!-- Order : order-1 / 2 / 3 / 4 / 5 / etc ... / order-first / order-last / order-none -->
+        <!-- Align-self : self-start / end / center / stretch -->
+  
+        <div class="flex h-32  bg-gray-200">
+          <div class="w-20 h-20 bg-green-400 m-4"></div>
+          <div class="w-20 h-20 bg-black m-4"></div>
+          <div class="w-20 h-20 bg-blue-900 m-4 self-end"></div>
+        </div>
+      
+    </div>
+  </body>
+</html>

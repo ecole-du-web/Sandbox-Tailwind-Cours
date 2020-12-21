@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition / Animation</title>
+    <link rel="stylesheet" href="../../output.css" />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <a
+      class="top-4 left-4 w-20 h-20 rounded-full bg-red-500 flex items-center justify-center absolute"
+      href="../../index.html"
+      >ACCUEIL</a
+    >
+
+    <h1 class="font-medium text-8xl text-white text-center pt-20 pb-20">
+        Transition / Animation
+    </h1>
+
+    <hr />
+    <!-- !!MONTRE LES VARIANTS A LA FIN(MSG A SUPPR)!! -->
+    <!-- Contenu de la leçon -->
+
+    <div class="container mx-auto pb-60">
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Transition</h2>
+      <!-- On peut tout gérer d'un coup ou gérer valeur par valeur -->
+      <!-- 
+        transition-none : 	transition-property: none;
+        
+        transition-all	:   
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+
+        transition : 
+        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+
+        Ou encore des transitions toutes faites (transition-colors / opacity / shadow / transform)
+
+        transition-colors : 
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+
+       -->
+      <div
+        class="w-96 h-40"
+      ></div>
+
+      
+      <!-- Animation -->
+      <!-- On a quelques animas courantes proposées de base -->
+
+      <h2 class="text-4xl text-gray-50 pt-10 pb-5">Animation</h2>
+
+      <!-- 
+          animate-none : 	animation: none;
+          animate-spin : 	animation: spin 1s linear infinite;
+                            @keyframes spin {
+                            from {
+                                transform: rotate(0deg);
+                            }
+                            to {
+                                transform: rotate(360deg);
+                            }
+                            }
+
+        animate-pulse :    	animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+                            @keyframes pulse {
+                            0%, 100% {
+                                opacity: 1;
+                            }
+                            50% {
+                                opacity: .5;
+                            }
+                            }
+        animte-ping / animte-bounce
+      -->
+
+      <div
+        class="w-96 h-96"
+      ></div>
+
+    </div>
+  </body>
+</html>
