@@ -18,40 +18,55 @@
     </h1>
 
     <hr />
-
     <!-- Contenu de la leçon -->
 
     <div class="container mx-auto pb-60">
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Transition</h2>
       <!-- On peut tout gérer d'un coup ou gérer valeur par valeur -->
       <!-- 
-        transition-none : 	transition-property: none;
+        Pour gérer tout d'un coup avec des transitions toutes faites : 
+
         
-        transition-all	:   
+        transition-all	:  
+
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
 
         transition : 
+
         transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
 
-        Ou encore des transitions toutes faites (transition-colors / opacity / shadow / transform)
+        Transition pour anim spécifique : (transition-colors / opacity / shadow / transform)
+
+        
 
         transition-colors : 
+
         transition-property: background-color, border-color, color, fill, stroke;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
 
+        Dans la même veine :  transition-opacity / transition-shadow /  transition-transform
+
        -->
+
+       <!-- Les valeurs à changer au cas par cas :
+      
+      La durée : duration-75 / 100 / 150 / 200 / 300 / 500 / 700 / 1000
+      Le easing : ease-linear / in / out / in-out
+      Le délai : delay-75 / 100 / 150 / 200 / 300 / 500 / 700 / 1000
+      transition-none : 	transition-property: none;
+      -->
       <div
-        class="w-96 h-40"
+        class="w-96 h-40 bg-green-500 transition-all background-color hover:bg-red-500"
       ></div>
 
       
       <!-- Animation -->
-      <!-- On a quelques anims courantes proposées de base -->
+      <!-- On a quelques animas courantes proposées de base -->
 
       <h2 class="text-4xl text-gray-50 pt-10 pb-5">Animation</h2>
 
@@ -76,7 +91,7 @@
                                 opacity: .5;
                             }
                             }
-        animte-ping / animte-bounce
+        animate-ping / animte-bounce
       -->
 
       <div
